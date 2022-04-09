@@ -5,8 +5,8 @@ export abstract class Entity<TId> {
 
   private readonly domainEvents: DomainEvent[];
 
-  constructor(domainEvents: DomainEvent[]) {
-    this.domainEvents = domainEvents;
+  constructor() {
+    this.domainEvents = [];
   }
 
   addDomainEvent(domainEvent: DomainEvent) {
